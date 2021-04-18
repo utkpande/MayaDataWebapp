@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <title>Feedback</title>
+    </head>
+    <style>
+    body{
+        background-color:lightpink;
+        align-items: center;
+    }
+    h1{
+        color:red;
+    }
+     </style>
+    <body>
+        <h1>Feedback Form</h1>
+        <p>We would love to hear your thoughts,concerns or problems with anything so we can improve!!</p>
+        <hr color="grey">
+        <br>
+        <form action="feedback_results.html" method="GET">
+        <fieldset>
+            <legend align="top">Feedback Type</legend>
+            <table cellspacing="30">
+                <tr>
+                    <td>
+                
+                <label for="Comments">Comments</label>
+                <input type="radio" name="Feedback Type" id="Comments">
+                    </td>
+                    <td>
+                        <label for="bug">Bug reports</label>
+                        <input type="radio" name="Feedback Type" id="bug">
+                            </td>
+                            
+                    <td>
+                    
+                        <label for="Q">Questions</label>
+                        <input type="radio" name="Feedback Type" id="Q">
+                            </td>
+                            </tr>
+                            </table>
+        </fieldset>
+        <br>
+        <br>
+        <div>
+            <label for="describe"><legend>Describe Feedback: </legend></label>
+            
+            <textarea id="describe" name="describe" required placeholder="Enter your feedback" rows="4" cols="20"></textarea>
+              <br>
+              <br>
+        </div>
+        <div>
+            <legend>Name: </legend>
+            <input type="text" name="first name" id="first" placeholder="First Name" required>
+            &nbsp;
+            <input type="text" name="last name" id="last" placeholder="Last Name" required>
+            </div>
+
+            <br>
+             
+            <div>
+               <label for="email"><legend>E-mail ID: </legend></label>
+               <input type="email" name="email" id="email" placeholder="ex: myname@example.com" style="width: 200;" required>
+            </div>
+            <br>
+            <br>
+            <div>
+                <button type="submit" autofocus>Submit Feedback</button>    
+                &nbsp;
+                <button type="reset" autofocus>Reset</button>
+            </div>
+
+
+
+
+        </form>
+       </body>
+</html>
